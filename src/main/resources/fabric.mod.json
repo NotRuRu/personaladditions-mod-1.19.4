@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "personaladditionsmod",
+	"version": "${version}",
+	"name": "PersonalAdditions Mod",
+	"description": "Addint items I like in game",
+	"authors": [
+		"NotRuRu"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/personaladditionsmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.notruru.personaladditionsmod.PersonalAdditionsMod"
+		],
+		"client": [
+			"net.notruru.personaladditionsmod.PersonalAdditionsModClient"
+		],
+		"fabric-datagen": [
+			"net.notruru.personaladditionsmod.PersonalAdditionsModDataGenerator"
+		]
+	},
+	"mixins": [
+		"personaladditionsmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.19",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
