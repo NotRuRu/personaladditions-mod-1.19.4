@@ -3,7 +3,7 @@
   "ingredient": {
     "item": "minecraft:bread"
   },
-  "result": "personaladditionsmod:toasted_bread",
+  "result": "personaladditionsmod:soft_bread",
   "experience": 0.4,
   "cookingtime": 80
 }

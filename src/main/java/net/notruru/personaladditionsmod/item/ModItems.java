@@ -13,9 +13,9 @@ import net.notruru.personaladditionsmod.PersonalAdditionsMod;
 
 public class ModItems {
 
-    public static final Item Toasted_Bread = registerItem("toasted_bread",
-            new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(6).saturationModifier(0.6F).build())));
-    public static final Item Toasted_Jem = registerItem("toasted_jem",
+    public static final Item Soft_Bread = registerItem("soft_bread",
+            new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(3).saturationModifier(0.4F).build())));
+    public static final Item Bread_Jem = registerItem("bread_jem",
             new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(7).saturationModifier(0.7F).build())));
 
 
@@ -24,8 +24,8 @@ public class ModItems {
     }
 
     public static void addItemsToItemGroup() {
-        addToItemGroup(ItemGroups.FOOD_AND_DRINK, Toasted_Bread);
-        addToItemGroup(ItemGroups.FOOD_AND_DRINK, Toasted_Jem);
+        addToItemGroup(ItemGroups.FOOD_AND_DRINK, Soft_Bread);
+        addToItemGroup(ItemGroups.FOOD_AND_DRINK, Bread_Jem);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {
